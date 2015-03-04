@@ -1,0 +1,77 @@
+html, body {
+    margin: 0;
+}
+
+html {
+    background: #eaefef;
+}
+body {
+    font-family: Open-Sans, Helvetica, sans-serif;
+    font-size: 14px;
+    background: white;
+}
+
+
+/* Nav Styles */
+
+nav {
+    background: #b5b9b9;
+    margin-bottom: 2em;
+}
+nav ul, nav li {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    min-height: 0;
+}
+nav ul li a:not(.button) {
+    font-weight: 400;
+    font-size: 1em;
+    color: white;
+    margin: 0 1em;
+    padding: .5em .25em;
+    display: block;
+    max-width: 5em;
+    box-sizing: content-box;
+}
+nav ul li:hover {
+    background: #00b5c0;
+}
+nav ul li.search-form:hover {
+    background: none;
+}
+nav ul li.search-form label {
+    position: absolute;
+    left: -9000px;
+}
+nav li a:hover {
+    text-decoration: none;
+}
+nav li.search-form input[type="search"] {
+    width: 150px;
+}
+    /*header styles*/
+
+header {
+    margin-bottom: 2em;
+    min-height: 100px;
+}
+header h1 {
+    font-size: 48px;
+    font-weight:bold;
+    margin: 0;
+    padding-left: 70px;
+    background: url(../_images/gb-logo-100.png) no-repeat left center;
+    margin:0 15px 0 30px;
+    line-height:100px;
+}
+
+header h2 {
+    font-size: 18px;
+    font-style: italic;
+    font-weight: 400;
+    color: #666;
+    text-transform: lowercase;
+}
+
+

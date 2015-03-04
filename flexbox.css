@@ -1,0 +1,52 @@
+body {
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* Top Nav Styles */
+
+nav ul {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+}
+nav li {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -ms-flex-pack: center;
+    align-items: center;
+}
+nav li.search-form {
+    margin-left: auto;
+    margin-right: 2em;
+
+}
+
+/* Main Content Styles */
+
+.container {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 2em;
+}
+
+/* footer styles */
+
+
+footer {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    min-height: 4em;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+
