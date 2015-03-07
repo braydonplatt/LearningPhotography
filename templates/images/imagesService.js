@@ -1,36 +1,54 @@
 var app = angular.module('learnPhoto');
 
-var id = "";
-var param = "";
+//var id = "";
+//var param = "";
+//var allPhotos = [10000];
 
 app.service('photoService', function($http, $q) {
     this.getInfo = function (date) {
-        date = moment().format('YYYY-MM-DD');
+
         debugger;
+
+        date = moment(date).subtract(1, 'day').format('YYYY-MM-DD');
+
         var deferred = $q.defer();
+
         $http({
             method: 'GET',
-            url:
+            url: 'https://api.flickr.com/services/rest',
+            params: {
+                method: 'flickr.interestingness.getList',
+                api_key:
+                date: date,
+                format: 'json',
+                nojsoncallback: 1
+            }
+        }).then(function(data){
+            //allPhotos.concat(data.data.photos);
+            //deferred.return(allPhotos.slice(0,20))
+            deferred.resolve(data.data.photos.photo.slice(0,20));
         })
-            .then(function (data) {
-                console.log(data);
-                var imageShow = data.data;
-                //console.log(imageShow);
-                for (var i = 0; i < imageShow.length; i++) {
-                    //console.log(imageShow[i].dateupload);
-                }
-                return deferred.resolve(imageShow);
-            });
-        return deferred.promise;
+       // $http({
+       //     method: 'GET',
+       //     url: 'https://api.flickr.com/services/rest/?method=flickr.interestingness.getList&api_key=c13437666badf5467f4c73fc2a80f97c&date=' + date + '&extras=views&per_page=14&format=json&nojsoncallback=1&auth_token=72157651155171726-dcb611f4eba0d5bb&api_sig=62badf23606558623cab811957bf6c95'
+      //      })
+      //          .then(function (data) {
+      //          console.log(data);
+      //          var imageShow = data.data;
+      //          for (var i = 0; i < imageShow.length; i++) {
+      //              //console.log(imageShow[i].dateupload);
+      //          }
+      //          return deferred.resolve(imageShow)
+
+      //      });
+    return deferred.promise;
     }
-    this.getInfo();
+        this.getInfo();
+
+   // this.getNextPage(page){
+   //     return allPhotos.slice(page * 20 , page * 20);
+   // }
+
 })
-
-    /* 1) var url = Form the URL request string.
-    2) var formattedString = encodeURIComponent(url)
-    3) add GET& <-- to the front fo the string var formattedUrl = GET& + formattedString
-    4) use CryptoJS to create a HMAC-SHA1 hash. var signiature = Cryptojs.sha1(formattedUrl)
-    5) append that signature onto the end of your url. */
-
 
 

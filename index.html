@@ -10,20 +10,30 @@
     <link rel="stylesheet" type='text/css' href="flexbox.css">
 
 </head>
-<body ng-controller="mainCtrl">
+<body ng-controller="imagesCtrl">
 
 <nav role="navigation">
     <ul>
-        <li><a href="/#/bpImagesTemp" title="My Images"><i class="fa fa-camera-retro fa-2x"></i>    Images</a></li>
-        <li><a href="/#/imagesTemp" title="Flickr"><i class="fa fa-connectdevelop fa-2x"></i>   Flickr</a></li>
-        <li><a href="/#/homeTemp" title="Info"><i class="fa fa-info-circle fa-2x"></i>    Info</a></li>
+        <li><a href="/#/myimages" title="My Images"><i class="fa fa-camera-retro fa-2x"></i>    Images</a></li>
+        <li><a href="/#/images" title="Flickr"><i class="fa fa-connectdevelop fa-2x"></i>   Flickr</a></li>
+        <li><a href="/#/info" title="Info"><i class="fa fa-info-circle fa-2x"></i>    Info</a></li>
 
     </ul>
 </nav>
+<div class ='app-content'>
+    <!--
+    <li class="search-form"><form ng-submit="search()">
+    <input id="messageSubmit" class="form-control text-box" type="text" ng-model="searchImages" placeholder="Search">
+    <li class="search-button"></li><button ng-click="getInfo()">Submit</button>
 
+    <img style='width: 75px; height: 75px' ng-repeat="picture in pictures" ng-src="https://farm{{picture.farm}}.staticflickr.com/{{picture.server}}/{{picture.id}}_{{picture.secret}}_m.jpg" alt=""/>
+    -->
     <div class="container">
         <div ng-view></div>
     </div>
+    </form>
+</div>
+
 
 <!-- AngularJS -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.14/angular.min.js"></script>
@@ -43,10 +53,9 @@
 <script src="templates/home/homeCtrl.js"></script>
 <script src="templates/images/imagesCtrl.js"></script>
 
-
+</body>
 
     <footer role="contentinfo">
         <p>&copy; 2015 Braydon Platt | Simple Website utilizing the Flickr API</p>
     </footer>
-</body>
 </html>

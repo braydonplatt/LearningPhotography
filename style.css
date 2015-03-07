@@ -13,7 +13,7 @@ html {
 body {
     font-family: 'Roboto Slab', serif;
     font-size: 14px;
-    font-weight: light;
+    font-weight: lighter;
     background: #efeffa;
 }
 
@@ -23,11 +23,10 @@ body {
 nav {
     background: #7a8999;
     margin-bottom: 2em;
-    margin-top: 2em;
 }
 nav ul, nav li {
     padding: 0;
-    margin top: 12px;
+    margin-top: 12px;
     list-style: none;
     min-height: 0;
 }
@@ -86,6 +85,6 @@ header h2 {
 
 footer {
     font-size: 10px;
-    font-weight: 300;
+
 }
 

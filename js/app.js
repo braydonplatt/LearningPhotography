@@ -8,10 +8,10 @@ app.config(function($routeProvider){
         })
         .when("/images", {
             templateUrl: "/templates/images/imagesTemp.html",
-            controller: "imagesCtrl",
-            resolve: {
-            }
-                .when("/myimages", {
+            controller: "imagesCtrl"
+        })
+
+        .when("/myimages", {
                     templateUrl: "/templates/bpimages/bpImagesTemp.html",
                     controller: "bpimagesCtrl",
                     resolve: {
@@ -20,11 +20,9 @@ app.config(function($routeProvider){
                         }
                     }
                 })
-
-
-            })
-
         .otherwise({
             redirectTo: "/"
-        })
+            })
+
+
 });

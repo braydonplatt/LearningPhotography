@@ -1,7 +1,8 @@
-<li class="search-form"><form ng-submit="postData()">
-    <input id="messageSubmit" class="form-control text-box" type="text" ng-model="searchImages" placeholder="Search">
-    <li class="search-button"></li><button ng-click="getInfo()">Submit</button>
+<div class ='app-content'>
+    <li class="search-form"><form ng-submit="search()">
+        <input id="messageSubmit" class="form-control text-box" type="date" ng-model="searchImages" placeholder="Search">
+        <li class="search-button"></li><button ng-click="getInfo()">Submit</button>
 
-    <img style='width: 75px; height: 75px' ng-repeat="picture in pictures" ng-src="https://farm{{picture.farm-id}}.staticflickr.com/{{picture.server-id}}/{{picture.id}}_{{picture.secret}}_m.jpg" alt=""/>
-
-    {{searchImages}}
+        <img style='width: 100px; height: 100px' ng-repeat="picture in pictures" ng-src="https://farm{{picture.farm}}.staticflickr.com/{{picture.server}}/{{picture.id}}_{{picture.secret}}_m.jpg" alt=""/>
+</form>
+</div>
