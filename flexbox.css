@@ -3,27 +3,46 @@ body {
     margin: 0 auto;
 }
 
+
 /* Top Nav Styles */
+
+nav {
+
+}
 
 nav ul {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
+    flex-direction: row;
+    height: 100%;
+
+
 }
 nav li {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    -webkit-align-items: center;
+    -webkit-align-items: left;
     -ms-flex-pack: center;
-    align-items: center;
+    align-items: left;
+    flex-direction: row;
+    box-shadow: 0 0px 1px rgba(75,75,75,.5);
+    transition: all 1s ease;
+    opacity: .8;
+}
+
+nav li a {
+    width: auto;
 }
 nav li.search-form {
     margin-left: auto;
     margin-right: 2em;
-
 }
 
+nav li.search-button {
+    margin-left: auto;
+}
 /* Main Content Styles */
 
 .container {

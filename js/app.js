@@ -1,21 +1,30 @@
-var app = angular.module("learnPhoto", ['firebase', "ngRoute"]);
+var app = angular.module("learnPhoto", ['firebase', 'ngRoute']);
 
 app.config(function($routeProvider){
     $routeProvider
-        .when("/login", {
-            templateUrl: "/js/templates/login/loginTemp.html",
-            controller: "loginCtrl"
+        .when("/", {
+            templateUrl: "/templates/home/homeTemp.html",
+            controller: "homeCtrl"
         })
-        .when("/threads", {
-            templateUrl: "/js/templates/threads/threads.html",
-            controller: "threadsCtrl",
+        .when("/images", {
+            templateUrl: "/templates/images/imagesTemp.html",
+            controller: "imagesCtrl",
             resolve: {
-                threadsRef: function(threadsService) {
-                    return threadsService.getThreads();
-                }
             }
-        })
+                .when("/myimages", {
+                    templateUrl: "/templates/bpimages/bpImagesTemp.html",
+                    controller: "bpimagesCtrl",
+                    resolve: {
+                        user: function(photoService) {
+                            return photoService.getInfo();
+                        }
+                    }
+                })
+
+
+            })
+
         .otherwise({
-            redirectTo: "/login"
+            redirectTo: "/"
         })
-})
+});
