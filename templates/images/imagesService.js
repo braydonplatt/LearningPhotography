@@ -7,7 +7,7 @@ var app = angular.module('learnPhoto');
 app.service('photoService', function($http, $q) {
     this.getInfo = function (date) {
 
-        debugger;
+        //debugger;
 
         date = moment(date).subtract(1, 'day').format('YYYY-MM-DD');
 
@@ -30,7 +30,7 @@ app.service('photoService', function($http, $q) {
         })
        // $http({
        //     method: 'GET',
-       //     url: 'https://api.flickr.com/services/rest/?method=flickr.interestingness.getList&api_key=c13437666badf5467f4c73fc2a80f97c&date=' + date + '&extras=views&per_page=14&format=json&nojsoncallback=1&auth_token=72157651155171726-dcb611f4eba0d5bb&api_sig=62badf23606558623cab811957bf6c95'
+       //     url:
       //      })
       //          .then(function (data) {
       //          console.log(data);

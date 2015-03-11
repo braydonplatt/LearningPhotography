@@ -11,6 +11,11 @@ app.config(function($routeProvider){
             controller: "imagesCtrl"
         })
 
+        .when("/info", {
+            templateUrl: "/templates/Info/infoTemp.html",
+            controller: "infoCtrl"
+        })
+
         .when("/myimages", {
                     templateUrl: "/templates/bpimages/bpImagesTemp.html",
                     controller: "bpimagesCtrl",

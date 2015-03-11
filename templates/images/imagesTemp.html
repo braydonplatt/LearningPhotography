@@ -1,8 +1,9 @@
-<div class ='app-content'>
-    <li class="search-form"><form ng-submit="search()">
-        <input id="messageSubmit" class="form-control text-box" type="date" ng-model="searchImages" placeholder="Search">
-        <li class="search-button"></li><button ng-click="getInfo()">Submit</button>
 
-        <img style='width: 100px; height: 100px' ng-repeat="picture in pictures" ng-src="https://farm{{picture.farm}}.staticflickr.com/{{picture.server}}/{{picture.id}}_{{picture.secret}}_m.jpg" alt=""/>
-</form>
+        <form ng-submit="search()">
+            <input id="messageSubmit" class="form-control text-box" type="date" ng-model="searchImages" placeholder="Search" class="search-button"></form>
+                 <button class="button-center" ng-click="getInfo()">Submit</button></form>
+
+            <div class ='app-content'>
+        <img class = 'imageSize' ng-repeat="picture in pictures" ng-src="https://farm{{picture.farm}}.staticflickr.com/{{picture.server}}/{{picture.id}}_{{picture.secret}}_m.jpg" alt=""/>
+
 </div>
