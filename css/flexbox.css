@@ -23,9 +23,9 @@ nav li {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    -webkit-align-items: left;
+    -webkit-align-items: center;
     -ms-flex-pack: center;
-    align-items: left;
+    align-items: center;
     flex-direction: row;
     box-shadow: 0 0px 1px rgba(75,75,75,.5);
     transition: all 1s ease;
@@ -49,27 +49,45 @@ nav li.search-button {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    margin-bottom: 2em;
-    -webkit-flex-direction: row;
-    flex-direction: row;
     -webkit-align-items: center;
+    -ms-flex-pack: center;
     align-items: center;
-    flex-direction: column;
-    box-shadow: 0 0px 2px rgba(75,75,75,.5);
+    flex-direction: row;
+    -webkit-flex-flow: row wrap;
+    justify-content: space-around;
     margin: auto;
     flex-wrap: wrap;
-    min-width: 320px;
-    max-width: 1220px;
+    padding: 20px;
+
 }
 
 
-.flex-item {
-    height: 120px;
-    width: 300px;
-    border: 1px solid #626262;
-    margin: 3px;
-    padding: 10px 0 0 10px;
+/* Home page Stying */
+
+.intro-image {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -ms-flex-pack: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: auto;
 }
+
+/* Flickr Images Styling */
+
+.imageSize {
+    padding: 5px;
+    margin-top: 10px;
+
+    line-height: 150px;
+    color: white;
+    font-weight: bold;
+    font-size: 3em;
+    text-align: center;
+}
+
 span {
     padding-left: 5px;
 }

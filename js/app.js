@@ -1,6 +1,7 @@
-var app = angular.module("learnPhoto", ['firebase', 'ngRoute']);
+var app = angular.module("learnPhoto", ['firebase', 'ngRoute', 'bootstrapLightbox']);
 
-app.config(function($routeProvider){
+app.config(function($routeProvider, LightboxProvider){
+    LightboxProvider.templateUrl = 'templates/LightBox/lightbox.html';
     $routeProvider
         .when("/", {
             templateUrl: "/templates/home/homeTemp.html",
@@ -17,7 +18,7 @@ app.config(function($routeProvider){
         })
 
         .when("/myimages", {
-                    templateUrl: "/templates/bpimages/bpImagesTemp.html",
+                    templateUrl: "/templates/bpImages/bpImagesTemp.html",
                     controller: "bpimagesCtrl",
                     resolve: {
                         user: function(photoService) {

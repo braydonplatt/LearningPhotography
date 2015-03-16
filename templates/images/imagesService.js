@@ -15,15 +15,16 @@ app.service('photoService', function($http, $q) {
 
         $http({
             method: 'GET',
-            url: 'https://api.flickr.com/services/rest',
-            params: {
-                method: 'flickr.interestingness.getList',
-                api_key:
-                date: date,
-                format: 'json',
-                nojsoncallback: 1
+                url: 'https://api.flickr.com/services/rest',
+                params: {
+                    method: 'flickr.interestingness.getList',
+                    api_key: ,
+                    date: date,
+                    format: 'json',
+                    nojsoncallback: 1
             }
         }).then(function(data){
+            console.log(data);
             //allPhotos.concat(data.data.photos);
             //deferred.return(allPhotos.slice(0,20))
             deferred.resolve(data.data.photos.photo.slice(0,20));
