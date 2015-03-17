@@ -71,7 +71,6 @@ nav li.search-button {
     -webkit-align-items: center;
     -ms-flex-pack: center;
     align-items: center;
-    flex-wrap: wrap;
     margin: auto;
 }
 

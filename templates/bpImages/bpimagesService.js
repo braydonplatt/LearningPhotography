@@ -12,7 +12,7 @@ app.service('bpimagesService', function($http, $q) {
             url:  'https://api.flickr.com/services/rest',
             params: {
                 method: 'flickr.photosets.getPhotos',
-                api_key: ,
+                api_key: '',
                 photoset_id: '72157651279587531',
                 user_id: '130019886@N08',
                 format: 'json',

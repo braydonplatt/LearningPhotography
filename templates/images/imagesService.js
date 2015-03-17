@@ -18,7 +18,7 @@ app.service('photoService', function($http, $q) {
                 url: 'https://api.flickr.com/services/rest',
                 params: {
                     method: 'flickr.interestingness.getList',
-                    api_key: ,
+                    api_key: '',
                     date: date,
                     format: 'json',
                     nojsoncallback: 1
