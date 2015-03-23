@@ -4,13 +4,13 @@
     <meta charset="utf-8">
     <title>Learn Photography</title>
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet">
-    <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,300,100,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,700,300' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
     <link rel="stylesheet" href="bower_components/angular-loading-bar/build/loading-bar.css">
     <link rel="stylesheet" href="bower_components/angular-bootstrap-lightbox/dist/angular-bootstrap-lightbox.css">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type='text/css' href="css/flexbox.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
 
 
 </head>
@@ -26,7 +26,7 @@
     </ul>
 </nav>
     </div>
-<div class ='app-content'>
+
     <!--
     <li class="search-form"><form ng-submit="search()">
     <input id="messageSubmit" class="form-control text-box" type="text" ng-model="searchImages" placeholder="Search">
@@ -34,10 +34,8 @@
 
     <img style='width: 75px; height: 75px' ng-repeat="picture in pictures" ng-src="https://farm{{picture.farm}}.staticflickr.com/{{picture.server}}/{{picture.id}}_{{picture.secret}}_m.jpg" alt=""/>
     -->
-    <div class="container">
+    <!--<div class="container">-->
         <div ng-view></div>
-    </div>
-    </form>
 </div>
 
 
@@ -69,7 +67,7 @@
 
 </body>
 
-    <footer role="contentinfo">
+    <footer role="contentInfo">
         <p>&copy; 2015 Braydon Platt | Simple Website utilizing the Flickr API</p>
     </footer>
 </html>

@@ -27,7 +27,7 @@ app.service('photoService', function($http, $q) {
             console.log(data);
             //allPhotos.concat(data.data.photos);
             //deferred.return(allPhotos.slice(0,20))
-            deferred.resolve(data.data.photos.photo.slice(0,20));
+            deferred.resolve(data.data.photos.photo.slice(0,23));
         })
        // $http({
        //     method: 'GET',

@@ -12,9 +12,9 @@ html {
     box-sizing: border-box;
 }
 body {
-    font-family: 'Roboto Slab', serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 14px;
-    font-weight: lighter;
+    font-weight: 300;
     background: #efeffa;
 }
 
@@ -61,8 +61,15 @@ nav li.search-form input[type="search"] {
 
 /*flickr images styling*/
 
+.search-button {
+    width: 300px;
+    height: 35px;
+    align-content: center;
+    margin-bottom: 10px;
+}
+
 .button-flickr {
-    width: 500px;
+    width: 200px;
     height: 35px;
     align-content: space-between;
 }
@@ -91,7 +98,7 @@ nav li.search-form input[type="search"] {
 
 .imagesOne {
     padding: 10px;
-    width: 300px;
+    width: 380px;
     height: auto;
 }
 
@@ -105,14 +112,17 @@ grayscale-anim{
     to   { -webkit-filter: grayscale(1); }
 }
 
+.bpImageNav {
+    text-align: center;
+}
+
 /* Styling for lightbox*/
     .btn-group {
-        font-family: 'Roboto Slab', serif;
+        font-family: 'Roboto', sans-serif;
         font-size: 24px;
         font-weight: lighter;
         background: #efeffa;
 }
-
 
 
 /* Info Tabs Styling */
@@ -122,16 +132,16 @@ grayscale-anim{
     font-weight: 400;
     text-align: center;
     margin-bottom: 15px;
-    color: #262626;
+    color: #292c2b;
 }
 
 footer {
-    font-family: "Roboto Slab";
+    font-family: 'Roboto', sans-serif;
     font-weight: normal;
     font-size: 16px;
     background-color:
     color: rgba(28, 38, 43, 0.4);
-    padding: 90px 0;
+    padding: 30px 0;
     border-top: solid 2px rgba(221, 221, 221, 0.2);
     margin-bottom: 10px;
 }
@@ -142,7 +152,6 @@ footer a {
 }
 footer a:hover {
     color: #b23813;
-    text-decoration: none;
 }
 
 footer ul {
@@ -159,10 +168,10 @@ footer li {
 
 }
 footer li:first-child {
-    border-bottom: dotted 1.5px rgba(221, 221, 221, 0.4);
+    border-bottom: dotted 1px rgba(221, 221, 221, 0.4);
     padding-bottom: 5px;
     margin-bottom: 10px;
-    font-family: "Roboto Slab", Helvetica, sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-weight: 500;
     font-size: 15px;
 }
@@ -170,7 +179,6 @@ footer li:first-child {
 footer li img:hover {
     opacity: 1;
 }
-
 
     /*header styles*/
 
@@ -198,6 +206,7 @@ header h2 {
 
 footer {
     font-size: 10px;
+    color: #262626;
 
 }
 

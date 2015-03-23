@@ -1,6 +1,6 @@
 var app = angular.module('learnPhoto');
 
-app.controller('imagesCtrl', function($scope, photoService){
+app.controller('imagesCtrl', function($scope, photoService, Lightbox){
 
     $scope.getInfo = function() {
         $scope.date = $scope.searchImages;
@@ -12,5 +12,8 @@ app.controller('imagesCtrl', function($scope, photoService){
     };
 
     $scope.getInfo();
+    $scope.openLightboxModal = function (index) {
+        Lightbox.openModal($scope.getInfo, index);
+    };
 
 });

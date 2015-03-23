@@ -1,5 +1,9 @@
-
+<div class ="bpImageNav">
+    <button ng-click="myEuropeImages()"><i class="fa fa-chevron-circle-left"></i>  Previous</button>
+    <button ng-click="myEuropeImages2()">Next  <i class="fa fa-chevron-circle-right"></i>  </button>
+</div>
 <div class="images">
     <img class='imagesOne' ng-repeat="image in images"  ng-click="openLightboxModal($index)" ng-src={{image.url}} alt=""/>
 
 </div>
+

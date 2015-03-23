@@ -1,5 +1,5 @@
 body {
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
 }
 
@@ -15,7 +15,7 @@ nav ul {
     display: -ms-flexbox;
     display: flex;
     flex-direction: row;
-
+    margin-left: 25px;
 
 
 }
@@ -59,20 +59,25 @@ nav li.search-button {
     flex-wrap: wrap;
     padding: 20px;
 
-}
+}*
 
 
 /* Home page Stying */
 
-.intro-image {
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-align-items: center;
-    -ms-flex-pack: center;
-    align-items: center;
-    margin: auto;
+#homeImage {
+     /* margin-top: -55px; */
+     height: 600px;
+     width: 100%;
+     /* background: #3D3544; */
+     background-image: url('http://i306.photobucket.com/albums/nn261/mickleigh11/DevMountain/MPP-4862-12_zpsk4gaaifa.jpg');
+     background-size: cover;
+     max-height: 800px;
+    margin-top: -28px;
 }
+
+
+
+
 
 /* Flickr Images Styling */
 
@@ -94,8 +99,13 @@ span {
 
 /* footer styles */
 
+.footer #contentInfo {
+    color: #262626;
 
-footer {
+
+}
+
+footer{
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
@@ -106,6 +116,9 @@ footer {
     -webkit-align-items: center;
     -ms-flex-align: center;
     align-items: center;
+    color: #262626;
 }
+}
+
 
 
