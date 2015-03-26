@@ -69,13 +69,32 @@ nav li.search-button {
      height: 600px;
      width: 100%;
      /* background: #3D3544; */
-     background-image: url('http://i306.photobucket.com/albums/nn261/mickleigh11/DevMountain/MPP-4862-12_zpsk4gaaifa.jpg');
+     background-image: url('http://i306.photobucket.com/albums/nn261/mickleigh11/DevMountain/MPP-4862-15_zpsbhuryhax.jpg');
      background-size: cover;
      max-height: 800px;
     margin-top: -28px;
 }
 
+.logoOne {
+    padding: 30px;
+    margin-left: 22px;
+}
 
+.textBox p {
+    display: flex;
+    font-size: 26px;
+    font-weight: 500;
+    display: inline-block;
+    margin-left: 105px;
+}
+
+.textBox2 {
+    font-size: 18px;
+    font-weight: 100;
+    display: flex;
+    display: inline-block;
+    margin-left: 105px;
+}
 
 
 
@@ -118,7 +137,7 @@ footer{
     align-items: center;
     color: #262626;
 }
-}
+
 
 
 
