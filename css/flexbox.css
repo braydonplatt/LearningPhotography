@@ -75,9 +75,14 @@ nav li.search-button {
     margin-top: -28px;
 }
 
+.quote {
+    font-weight: 400;
+    margin-top: 15px;
+}
+
 .logoOne {
     padding: 30px;
-    margin-left: 22px;
+    margin-left: 1px;
 }
 
 .textBox p {
@@ -85,15 +90,15 @@ nav li.search-button {
     font-size: 26px;
     font-weight: 500;
     display: inline-block;
-    margin-left: 105px;
+    margin-left: 85px;
 }
 
 .textBox2 {
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 100;
     display: flex;
     display: inline-block;
-    margin-left: 105px;
+    margin-left: 85px;
 }
 
 

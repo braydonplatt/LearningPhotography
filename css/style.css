@@ -6,14 +6,14 @@ html, body {
 }
 
 html {
-    background: #efeffa;
+    background: #f0f0f3;
     box-sizing: border-box;
 }
 body {
     font-family: 'Roboto', sans-serif;
     font-size: 14px;
     font-weight: 300;
-    background: #efeffa;
+    background: #f0f0f3;
 }
 
 /*header styles*/
@@ -82,7 +82,15 @@ nav li.search-form input[type="search"] {
 /*flickr images styling*/
 
 .flickrExplained {
-    text-align: center;
+    text-align: left;
+    margin-left: 45px;
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+.flickrExplained .awesomeness {
+    font-size: 14px;
+    font-weight: 400;
 }
 
 .searchBox{
@@ -114,7 +122,11 @@ nav li.search-form input[type="search"] {
 /*bp Images Styling*/
 
 .bpParagraph {
-    text-align: center;
+    text-align: left;
+    font-size: 14px;
+    font-weight: 300;
+    margin-left: 45px;
+    margin-bottom: 25px;
 }
 
 .images {
