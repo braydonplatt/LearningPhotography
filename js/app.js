@@ -2,6 +2,7 @@ var app = angular.module("learnPhoto", ['firebase', 'ngRoute', 'bootstrapLightbo
 
 app.config(function($routeProvider, LightboxProvider){
     LightboxProvider.templateUrl = 'templates/LightBox/lightbox.html';
+
     $routeProvider
         .when("/", {
             templateUrl: "/templates/home/homeTemp.html",

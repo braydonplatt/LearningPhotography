@@ -2,7 +2,7 @@ var app = angular.module('learnPhoto');
 
 app.service('bpimagesService', function($http, $q) {
 
-    this.myEuropeImages = function (photoId) {
+    this.myEuropeImages = function (photoId, description) {
 
 
         var deferred = $q.defer();
@@ -14,6 +14,7 @@ app.service('bpimagesService', function($http, $q) {
                 method: 'flickr.photosets.getPhotos',
                 api_key: ,
                 photoset_id: photoId,
+                extras: 'description',
                 user_id: '130019886@N08',
                 format: 'json',
                 nojsoncallback: 1
@@ -21,8 +22,7 @@ app.service('bpimagesService', function($http, $q) {
 
 
         }).then(function (data) {
-            debugger;
-            console.log(data.data);
+            console.log(data);
             var photoset = data.data.photoset.photo.slice(0, 20);
             for(var i = 0; i < photoset.length; i++){
                 var image = photoset[i];

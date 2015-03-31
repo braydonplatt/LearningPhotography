@@ -1,8 +1,5 @@
 var app = angular.module('learnPhoto');
 
-//var id = "";
-//var param = "";
-//var allPhotos = [10000];
 
 app.service('photoService', function($http, $q) {
     this.getInfo = function (date) {
@@ -29,19 +26,7 @@ app.service('photoService', function($http, $q) {
             //deferred.return(allPhotos.slice(0,20))
             deferred.resolve(data.data.photos.photo.slice(0,23));
         })
-       // $http({
-       //     method: 'GET',
-       //     url:
-      //      })
-      //          .then(function (data) {
-      //          console.log(data);
-      //          var imageShow = data.data;
-      //          for (var i = 0; i < imageShow.length; i++) {
-      //              //console.log(imageShow[i].dateupload);
-      //          }
-      //          return deferred.resolve(imageShow)
 
-      //      });
     return deferred.promise;
     }
         this.getInfo();

@@ -1,6 +1,9 @@
-
-        <form ng-submit="search()">
-            <input id="messageSubmit" class="form-control text-box" type="date" ng-model="searchImages" placeholder="Search" class="search-button"></form>
+<div class="flickrExplained">
+    <p>Flickr has over 1 million uploads everyday and most of those we will never see or know about</p>
+    <p>There are some however that deserve to be recognized and found.</p>
+    <p>Please choose a date below to see Awesomeness:</p></div>
+        <div class="text-center" ng-submit="search()">
+            <input class="searchBox search-button" type="date" ng-model="searchImages" placeholder="Search"></div>
 
                 <div class="button-center"> <button class="button-flickr" ng-click="getInfo()">Submit</button></div></form>
 

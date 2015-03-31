@@ -25,11 +25,12 @@
     <div class="lightbox-image-container">
         <!-- caption -->
         <div class="lightbox-image-caption">
-            <span>{{Lightbox.imageCaption}}</span>
+            <p>{{Lightbox.imageCaption}}</p>
         </div>
 
         <!-- image -->
         <img lightbox-src="{{Lightbox.imageUrl}}" alt="">
+        <div class='imageDescription' ng-show="test" img lightbox-src={{Lightbox.title}}></div>
     </div>
 </div>
 
